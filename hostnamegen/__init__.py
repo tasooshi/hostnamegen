@@ -2,13 +2,8 @@
 #######################################################################
 # License: BSD-3-Clause (http://opensource.org/licenses/BSD-3-Clause) #
 # Homepage: https://github.com/tasooshi/hostnamegen/                  #
-# Version: 0.9.0                                                      #
+# Version: 1.0.0                                                      #
 #######################################################################
-
-from __future__ import (
-    absolute_import,
-    print_function,
-)
 
 import random
 import sys
@@ -22,7 +17,7 @@ from hostnamegen import (
 )
 
 
-__version__ = (0, 9, 0)
+__version__ = (1, 0, 0)
 
 VERSION = '{}.{}.{}'.format(*__version__)
 

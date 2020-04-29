@@ -8,7 +8,7 @@ This little tool generates random host names that make sense. It is a complement
 
 Easiest way is by pulling from PyPI:
 
-    pip install hostnamegen
+    pip3 install hostnamegen
 
 ## Usage
 

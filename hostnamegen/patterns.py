@@ -2,10 +2,8 @@
 #######################################################################
 # License: BSD-3-Clause (http://opensource.org/licenses/BSD-3-Clause) #
 # Homepage: https://github.com/tasooshi/hostnamegen/                  #
-# Version: 0.9.0                                                      #
+# Version: 1.0.0                                                      #
 #######################################################################
-
-from __future__ import absolute_import
 
 import inspect
 
@@ -19,7 +17,7 @@ UNIQUE_ID = {'length': 6, 'special_chars': False, 'digits': True, 'upper_case': 
 
 class WindowsDefault(base.Pattern):
 
-    pattern = u'DESKTOP-{var_1}'
+    pattern = 'DESKTOP-{var_1}'
 
     def var_1(self):
         return self.factory.password(**UNIQUE_ID)
@@ -27,7 +25,7 @@ class WindowsDefault(base.Pattern):
 
 class FirstNameDesktop(base.Pattern):
 
-    pattern = u'{var_1}'
+    pattern = '{var_1}'
 
     def var_1(self):
         return slugify.slugify(self.factory.first_name()).capitalize()
@@ -35,7 +33,7 @@ class FirstNameDesktop(base.Pattern):
 
 class CompanyDesktop(base.Pattern):
 
-    pattern = u'{var_1}-{var_2}'
+    pattern = '{var_1}-{var_2}'
 
     def var_1(self):
         return slugify.slugify(self.factory.company().split(',')[0]).upper()

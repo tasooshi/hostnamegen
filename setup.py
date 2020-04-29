@@ -2,7 +2,7 @@
 #######################################################################
 # License: BSD-3-Clause (http://opensource.org/licenses/BSD-3-Clause) #
 # Homepage: https://github.com/tasooshi/hostnamegen/                  #
-# Version: 0.9.0                                                      #
+# Version: 1.0.0                                                      #
 #######################################################################
 
 from __future__ import (
@@ -19,7 +19,7 @@ with open('README.md') as f:
 
 setuptools.setup(
     name='hostnamegen',
-    version='0.9.0',
+    version='1.0.0',
     author='tasooshi',
     author_email='tasooshi@pm.me',
     description='Random host name generator',
@@ -37,9 +37,9 @@ setuptools.setup(
         'hostnamegen',
     ],
     install_requires=(
-        'Faker==1.0.1',
-        'python-slugify==2.0.1',
-        'click==6.7',
+        'Faker==4.0.3',
+        'python-slugify==4.0.0',
+        'click==7.1.2',
     ),
     entry_points={
         'console_scripts': (
@@ -47,11 +47,11 @@ setuptools.setup(
         ),
     },
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Topic :: Utilities',
         'License :: OSI Approved :: BSD License',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ]
 )
